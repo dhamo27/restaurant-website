@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+}
+.navbar-brand span{
+    font-family: "Metrophobic", sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 40px;
+  color: #cb202d;
+  
+}
+.btn button{
+   background-color: #cb202d !important;
+   color: white !important;
+   border-radius: 20px !important;
+   padding: 5px 30px !important;
+   border: none;
+}
+.btn button:hover{
+    color: black !important;
+    background-color: white !important;
+}
+
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+#navbarSupportedContent a{
+    color: white;
+font-size: 1rem;
+font-weight: 400;
+}
+#navbarSupportedContent a:hover{
+    color: #cb202d;
+    border-bottom: 1px solid #cb202d;
+}
+ @media (max-width: 991.98px) { /* Bootstrap's 'md' breakpoint */
+      .nav-link:hover {
+        border-bottom: none !important;
+      }
+    }
+
+    @media (max-width: 767.98px) { /* Bootstrap's 'sm' breakpoint */
+      .nav-link:hover {
+        border-bottom: none !important;
+      }
+    }
+
+.navbar-toggler{
+    background-color: white !important;
+}
+@media (max-width: 992px) {
+    .offcanvas-body {
+        background-color: black; /* Background color for medium and small devices */
+    }
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+#home{
+background: url(background-1.jpeg);
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+#home span{
+    color: #cb202d;
+}
+#home h1{
+    font-family: "Biryani", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  font-style: normal;
+}
+#home p{
+    max-width: 600px;
+    color: grey !important;
+}
+#home button{
+    background: transparent;
+    border:1px solid white;
+    color: white;
+    margin-left: 45px;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+#home button:hover{
+    transform: translateX(10px);
+    color: #cb202d;
+    border: 1px solid #cb202d;
+}
+#home a{
+    border-radius: 50%;
+    padding: 10px 13px;
+    margin: 10px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    position: relative;
+    top: 30px;
+    left: 35px;
+    transition: 0.1s ease-in-out;
+}
+#home a:hover{
+    background-color: #cb202d;
+    color: white;
+}
+#home img{
+    width: 550px;
+    height: 500px;
+    margin-right: 150px;
+    position: absolute;
+    top: 200px;
+    right: -10px;
+    z-index: 1;
+    animation: zoom 3s infinite;
+    transition: 0.2s ease-in-out;
+}
+@keyframes zoom {
+0%{
+    transform: scale(1);
+}
+50%{
+    transform: scale(1.1);
+}
+100%{
+    transform: scale(1);
+}
+}
+#menu{
+    background: black;
+}
+#menu h1{
+    color: white;
+    text-align: center;
+    font-family: "Biryani", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    font-style: normal;
+    padding: 50px 0;
+}
+#menu .card{
+    position: relative;
+    left: 20px;
+    margin: 30px 0px;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+#menu .card:hover{
+    transform: translateY(-10px);
+}
+#menu .card img{
+    transition: .3s ease-in-out;
+}
+#menu .card:hover img{
+    transform: scale(1.1);
+}
+#menu .card-body a{
+    transition: .3s ease-in-out;
+}
+#menu .card-body a:hover{
+    transform: scale(1.1);
+    background-color: black !important;
+}
+
+
+#types{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin-bottom: 80px;
+}
+#types a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+#types a:hover, #types a.active{
+    color: #cb202d;
+    border: 1px solid #cb202d;
+}
+#why-us{
+    background: url(download.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#why-us .container-fluid{
+    background: black;
+    border-radius: 10px;
+    border: 2px solid #cb202d;
+    width: 100%;
+    height: 400px;
+}
+#why-us img{
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    left: 100px;
+}
+#why-us h1{
+    color: white;
+    font-family: "Biryani", sans-serif;
+    font-weight: 1000;
+    font-size: 3rem;
+    font-style: normal;
+    padding: 20px 0;
+}
+#why-us p{
+    max-width: 600px;
+}
+#why-us a{
+    background: transparent;
+    border:1px solid white;
+    color: white;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+#why-us a:hover{
+    transform: translateX(10px);
+    color: #cb202d;
+    border: 1px solid #cb202d;
+}
+#why-us .cook-1{
+    height: 500px;
+    position: absolute;
+    bottom: 250px;
+    left: 60px;
+    z-index: 0;
+}
+#about{
+    background-color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   overflow-x: hidden;
+}
+#about h1{
+    text-align: center;
+    font-family: "Biryani", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    font-style: normal;
+    color: #cb202d;
+}
+#about h2{
+    text-align: center;
+    font-family: "Biryani", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+#about .card{
+    margin: 30px 0px;
+   border: none;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    left: 40px;
+}
+#about .card:hover{
+    transform: translateY(-20px);
+}
+#about a{
+    background: transparent;
+    border:1px solid white;
+    color: white;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+#about a:hover{
+    transform: translateX(10px);
+    color: #cb202d;
+    border: 1px solid #cb202d;
+}
+#contact{
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contact .container-fluid{
+    background: black;
+    border-radius: 10px;
+    border: 2px solid #cb202d;
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+#contact .btn{
+    background: transparent;
+    border:1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: 0.2s ease-in-out;
+}
+#contact .btn:hover{
+    transform: translateX(10px);
+    color: #cb202d;
+    border: 1px solid #cb202d;
+}
+#contact input{
+    width: 400px;
+    height: 40px;
+}
+#contact textarea{
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
+@media (max-width: 850px) { /* Bootstrap's 'sm' breakpoint */
+   
+    #contact input {
+        width: 320px;
+        height: 40px;
+    }
+    #contact textarea{
+        width: 320px;
+        height: 40px;
+    }
+    #contact .container-fluid{
+        background: black;
+        border-radius: 10px;
+        border: 2px solid #cb202d;
+        width: 90%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+    }
+ 
+  }
+  @media (max-width: 1200px) {
+    #home img{
+        width: 300px;
+        height: 300px;
+        margin: 0 40px;
+    }
+    #why-us h1{
+        padding: 16px 0;
+    }
+    #why-us p{
+        max-width: 500px;
+font-size: 14px;
+  }
+}
+@media (max-width:1100px) {
+    #why-us .cook-1{
+        height: 500px;
+        position: absolute;
+        bottom: 350px;
+        left: 60px;
+        z-index: 0;
+    }
+    #why-us img{
+        width: 40vh;
+        height: 40vh;
+    }
+    
+}
+@media (max-width:993px) {
+    
+    #why-us .cook-1{
+       display: none;
+    }
+    #why-us img{
+        display: none;
+    }
+    #why-us h1{
+        margin-top: 60px;
+    }
+   #why-us p{
+font-size: 13px;
+max-width: 1200px;
+   }
+   #home img{
+    width: 250px;
+    height: 250px;
+    margin: 0 20px;
+    position: absolute;
+    top: 560px;
+}
+}
+@media (max-width:700px){
+    #why-us h1{
+        margin-top: 10px;
+    }
+}
+
